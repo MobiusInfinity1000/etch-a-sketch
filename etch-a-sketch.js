@@ -26,7 +26,7 @@ const clearButton = document.getElementById('clearButton');
 clearButton.addEventListener("click", () => {
     const gridDivs = document.getElementById("grid-container").querySelectorAll(".grid-element");
     for (let i=0; i<256; i++){
-        gridDivs[i].style.backgroundColor = "#062F4F";
+        gridDivs[i].style.backgroundColor = "#062F4F"; //assign colour to white later on 
     }
 });
 
