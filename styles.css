@@ -22,6 +22,7 @@ h1{
     display:grid;
     /* display: flex; */
     background-color: white;
+    
     /* flex-wrap: wrap;
     justify-content: space-between; */
     height: 70vh;
@@ -34,10 +35,32 @@ h1{
     margin-top: 2vh;
     margin-bottom: 2vh;
     display: block;
+    position: relative;
     background-color: #B82601;
+    align-items: center;
     height: 10vh;
     width: 70vw;
     border-radius: 10px;
+}
+
+.controller{
+    margin:auto;
+    padding:13px 30px 13px 30px;
+    background-color: #B82601;
+    border-style: solid;
+    border-color: white;
+    color: white;
+    position: absolute;
+    top: 1.25vh;
+    left: 85%;
+    font-size:1.3em;
+    border-radius: 10px;
+    border-bottom:
+}
+
+.controller:hover{
+    background-color: black;
+    color:white;
 }
 
 #footer{
