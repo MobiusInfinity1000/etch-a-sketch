@@ -55,3 +55,7 @@ h1{
     border-width: 0.001px;
 
 }
+
+.grid-element:hover{
+    background-color: white;
+}
