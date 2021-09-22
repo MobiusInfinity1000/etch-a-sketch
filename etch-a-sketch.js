@@ -8,12 +8,10 @@ let gridSize = parseInt(slider.value,10);
 
 
 //update slider value on load
-output.innerHTML = slider.value;
+output.innerHTML = "Grid Width: " + slider.value;
 
 // Update the current slider value (each time you drag the slider handle)
-slider.oninput = function() {
-    output.innerHTML = this.value;
-  }
+
 
 
 function addElement() {
@@ -28,10 +26,8 @@ function addElement() {
 }
 
 function changeGridSize(){
-    gridContainer.innerHTML = '';
+    gridContainer.innerHTML = ''; //clear grid Container before adding new divs
     let gridSize = parseInt(slider.value,10);
-    console.log(gridSize*gridSize);
-    console.log(typeof Math.pow(gridSize,2));
     for (let i=1; i<=Math.pow(gridSize,2); i++){
         addElement();
 
@@ -52,6 +48,11 @@ function addElementLoop(){
 document.body.onload = addElementLoop;
 
 //EVENT LISTENERS
+
+slider.oninput = function() {
+    output.innerHTML = "Grid Width: " + this.value;
+  }
+
 //clear button functionality
 clearButton.addEventListener("click", () => {
     const gridDivs = document.getElementById("grid-container").querySelectorAll(".grid-element");
