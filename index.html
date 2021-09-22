@@ -11,6 +11,9 @@
 <body>
     <div id ="title"><h1>Etch-a-sketch</h1></div>
     <div id ="controller-container" class = "controller-container">
+        <input class = "slider" id = "slider" type="range" min="10" max="100" value="32">
+        <p>Grid width: <span id="sliderVal"></span></p>
+        <button class = "controller" id = "changeGridButton">Clear and apply</button>
         <button class = "controller" id = "clearButton">Clear</button>
     </div>
     <div id ="grid-container" class="container"></div>

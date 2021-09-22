@@ -1,14 +1,19 @@
 *{
-    background-color:#062F4F;
+    /* background-color:#062F4F; */
     color: white;
     font-family: 'Roboto', 'Be Vietnam Pro', 'Poppins', sans-serif;
 }
 
+body{
+    background-image: linear-gradient(to bottom right, #CC2E95, #B82601);
+}
 #title{
     display: block;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 3em;
     padding:0;
+    padding-top:1%;
+    padding-bottom: 1%;
     margin:0;
 
 }
@@ -22,45 +27,63 @@ h1{
     display:grid;
     /* display: flex; */
     background-color: white;
+
     
     /* flex-wrap: wrap;
     justify-content: space-between; */
     height: 70vh;
     width: 80vw;
-    border-radius: 10px;
+    /* border-radius: 10px; */
 }
 
 #controller-container{
     margin:auto;
-    margin-top: 2vh;
-    margin-bottom: 2vh;
+    margin-bottom: 6vh;
     display: block;
     position: relative;
-    background-color: #B82601;
+    margin-right: 10%;
+    margin-left:10%;
+    /* background-color: #B82601; */
     align-items: center;
-    height: 10vh;
-    width: 70vw;
+    padding-bottom: 2%;
     border-radius: 10px;
 }
 
 .controller{
-    margin:auto;
-    padding:13px 30px 13px 30px;
-    background-color: #B82601;
+    padding:10px;
+    cursor: pointer;
+    /* padding:13px 30px 13px 30px; */
+    background-color: #062F4F;
     border-style: solid;
     border-color: white;
     color: white;
-    position: absolute;
-    top: 1.25vh;
-    left: 85%;
     font-size:1.3em;
     border-radius: 10px;
-    border-bottom:
+}
+
+#clearButton{
+    float: right;
+}
+
+#changeGridButton{
+    float:left;
+}
+
+.slider{
+    margin: auto;
+    cursor: pointer;
+    /* padding:13px 30px 13px 30px; */
+    border-style: solid;
+    border-color: white;
+    float: left;
+    font-size:1.3em;
+    border-radius: 10px;
 }
 
 .controller:hover{
-    background-color: black;
-    color:white;
+    background-color: #009DF9;
+    transition: 0.3s;
+    mouse
 }
 
 #footer{
@@ -73,12 +96,9 @@ h1{
 
 .grid-element{
     flex:1;
-    border-style: solid;
+    /* border-style: solid;
     border-color: white;
-    border-width: 0.001px;
-
-}
-
-.grid-element:hover{
+    border-width: 0.001px; */
     background-color: white;
+
 }
