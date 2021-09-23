@@ -67,7 +67,7 @@ slider.oninput = function() {
 clearButton.addEventListener("click", () => {
     const gridDivs = document.getElementById("grid-container").querySelectorAll(".grid-element");
     for (let i=0; i<=gridDivs.length; i++){
-        gridDivs[i].style.backgroundColor = "transparent"; //assign colour to white later on 
+        gridDivs[i].style.backgroundColor = "transparent";
     }
 });
 //change grid button functionality
