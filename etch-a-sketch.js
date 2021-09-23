@@ -21,7 +21,7 @@ function addElement() {
     //newDiv.appendChild(newContent);
     gridContainer.appendChild(newDiv);
     newDiv.addEventListener("mouseover", () => {
-        newDiv.style.backgroundColor = "black";
+        newDiv.style.backgroundColor = generateRandomColour();
     });
 }
 
@@ -42,6 +42,16 @@ function addElementLoop(){
 
     //setting grid property by JS so it can be changed later
     gridContainer.style["grid-template-columns"] = "repeat(16, 1fr)";
+}
+
+function generateRandomInt() {
+    let randomnumber = Math.floor(Math.random() * (256 - 0 + 1)) + 0; //as max rgb value is 255
+    return randomnumber;
+}
+
+function generateRandomColour(){
+    rgbCol = "rgb(" + generateRandomInt() + "," + generateRandomInt() + "," + generateRandomInt() + ")";
+    return rgbCol;
 }
 
 //When document loads, creates default value of 16 by 16 boxes
