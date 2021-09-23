@@ -11,10 +11,13 @@
 <body>
     <div id ="title"><h1>Etch-a-sketch</h1></div>
     <div id ="controller-container" class = "controller-container">
-        <input class = "slider" id = "slider" type="range" min="10" max="100" value="32">
+        <input class = "slider" id = "slider" type="range" min="10" max="100" value="16">
         <div id="sliderVal">Grid width:</div>
         <button class = "controller" id = "changeGridButton">Clear and apply</button>
-        <button class = "controller" id = "rainbowButton">RGB Mode</button>
+        <button class = "controller" id = "rainbowButton">Rainbow</button>
+        <!-- <button class = "controller" id = "blackButton">Black</button> -->
+        <input class = "customColour" type="color" id="customColour" name="customColour" value="#000000">
+            <label for="customColour" id = "colourLabel">Custom Colour</label>
         <button class = "controller" id = "clearButton">Clear</button>
     </div>
     <div id ="grid-container" class="container"></div>
